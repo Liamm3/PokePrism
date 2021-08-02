@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net5.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="ViewModels" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PokePrism.Core\PokePrism.Core.csproj" />
+      <ProjectReference Include="..\PokePrism.Pokemon\PokePrism.Pokemon.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+    </ItemGroup>
+
+</Project>

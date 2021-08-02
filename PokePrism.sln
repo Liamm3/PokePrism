@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokePrism", "PokePrism\PokePrism.csproj", "{00CFFDCC-3797-4AE3-8AF5-F95FE73DABF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokePrism.Pokemon", "PokePrism.Pokemon\PokePrism.Pokemon.csproj", "{37CC76D7-76DD-4D67-976C-6E465622CC38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokePrism.Core", "PokePrism.Core\PokePrism.Core.csproj", "{F7D2D15B-124C-44E2-9BB4-C7DD1444D8EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00CFFDCC-3797-4AE3-8AF5-F95FE73DABF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CFFDCC-3797-4AE3-8AF5-F95FE73DABF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CFFDCC-3797-4AE3-8AF5-F95FE73DABF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CFFDCC-3797-4AE3-8AF5-F95FE73DABF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37CC76D7-76DD-4D67-976C-6E465622CC38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37CC76D7-76DD-4D67-976C-6E465622CC38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37CC76D7-76DD-4D67-976C-6E465622CC38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37CC76D7-76DD-4D67-976C-6E465622CC38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7D2D15B-124C-44E2-9BB4-C7DD1444D8EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D2D15B-124C-44E2-9BB4-C7DD1444D8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D2D15B-124C-44E2-9BB4-C7DD1444D8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D2D15B-124C-44E2-9BB4-C7DD1444D8EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
