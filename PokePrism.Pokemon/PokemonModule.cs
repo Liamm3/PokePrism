@@ -13,7 +13,7 @@ namespace PokePrism.Pokemon {
         public PokemonModule(IRegionManager regionManager) {
             _regionManager = regionManager;
         }
-        
+
         public void RegisterTypes(IContainerRegistry containerRegistry) {
             containerRegistry.Register<PokedexView>();
             containerRegistry.RegisterSingleton<IPokemonService, PokemonService>();

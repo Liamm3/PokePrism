@@ -5,10 +5,64 @@
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250" />
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
         </Grid.ColumnDefinitions>
-        <DataGrid ItemsSource="{Binding PokemonList, UpdateSourceTrigger=PropertyChanged}" />
-        <Button Grid.Column="1" Command="{Binding TestCommand}" Content="show message" />
+
+        <!-- List of Pokemon -->
+        <DataGrid ItemsSource="{Binding PokemonList, UpdateSourceTrigger=PropertyChanged}" AutoGenerateColumns="False"
+                  IsReadOnly="True" SelectionMode="Single" SelectedItem="{Binding SelectedPokemon}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="No." Binding="{Binding Id}" />
+                <DataGridTemplateColumn Header="FrontSprite">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding Sprites.FrontDefault}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                <DataGridTemplateColumn Header="Types">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ItemsControl ItemsSource="{Binding Types}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Type.Name}" />
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Pokemon details -->
+        <Grid Grid.Column="1" DataContext="{Binding SelectedPokemon}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Source="{Binding Sprites.FrontDefault}" />
+            <StackPanel Grid.Column="1">
+                <WrapPanel>
+                    <TextBlock Text="Name: " />
+                    <TextBlock Text="{Binding Name}" />
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBlock Text="Types: " />
+                    <ItemsControl ItemsSource="{Binding Types}" />
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBlock Text="Weight: " />
+                    <TextBlock Text="{Binding Weight}" />
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBlock Text="Height: " />
+                    <TextBlock Text="{Binding Height}" />
+                </WrapPanel>
+            </StackPanel>
+        </Grid>
     </Grid>
 </UserControl>
