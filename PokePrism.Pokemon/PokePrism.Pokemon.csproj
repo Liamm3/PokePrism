@@ -6,11 +6,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="PokeApiNet" Version="3.0.3" />
       <PackageReference Include="Prism.Wpf" Version="8.1.97" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\PokePrism.Core\PokePrism.Core.csproj" />
+      <ProjectReference Include="..\PokePrism.Services.Interfaces\PokePrism.Services.Interfaces.csproj" />
+      <ProjectReference Include="..\PokePrism.Services\PokePrism.Services.csproj" />
     </ItemGroup>
 
 </Project>

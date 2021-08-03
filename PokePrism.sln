@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokePrism.Pokemon", "PokePr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokePrism.Core", "PokePrism.Core\PokePrism.Core.csproj", "{F7D2D15B-124C-44E2-9BB4-C7DD1444D8EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokePrism.Services", "PokePrism.Services\PokePrism.Services.csproj", "{40B93353-2A22-4D70-8EA9-C4095414ED75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokePrism.Services.Interfaces", "PokePrism.Services.Interfaces\PokePrism.Services.Interfaces.csproj", "{46B785BF-998C-49D4-A718-311B3D538489}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{F7D2D15B-124C-44E2-9BB4-C7DD1444D8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7D2D15B-124C-44E2-9BB4-C7DD1444D8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7D2D15B-124C-44E2-9BB4-C7DD1444D8EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B93353-2A22-4D70-8EA9-C4095414ED75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B93353-2A22-4D70-8EA9-C4095414ED75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B93353-2A22-4D70-8EA9-C4095414ED75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B93353-2A22-4D70-8EA9-C4095414ED75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B785BF-998C-49D4-A718-311B3D538489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B785BF-998C-49D4-A718-311B3D538489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B785BF-998C-49D4-A718-311B3D538489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B785BF-998C-49D4-A718-311B3D538489}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
